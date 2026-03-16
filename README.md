@@ -9,7 +9,7 @@ Webカメラの視線トラッキングで tmux pane を自動切り替えする
 
 <br>
 
-<img src="assets/demo-concept.svg" width="700" alt="Eye tracking concept: look at a pane to switch focus">
+<img src="assets/demo-concept.gif" width="700" alt="Eye tracking concept: look at a pane to switch focus">
 
 <br>
 
