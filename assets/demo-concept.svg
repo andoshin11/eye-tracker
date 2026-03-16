@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340">
+  <!-- Background -->
+  <rect width="800" height="340" rx="12" fill="#0f172a"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Look at a pane → it gets focus</text>
+  <text x="400" y="55" text-anchor="middle" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="12">No keyboard or mouse needed</text>
+
+  <!-- ===== LEFT: Face with eyes ===== -->
+  <!-- Face outline -->
+  <ellipse cx="275" cy="170" rx="65" ry="80" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Left eye -->
+  <ellipse cx="247" cy="150" rx="18" ry="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="252" cy="149" r="5" fill="#22d3ee"/>
+  <circle cx="252" cy="149" r="2" fill="#0f172a"/>
+
+  <!-- Right eye -->
+  <ellipse cx="303" cy="150" rx="18" ry="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="308" cy="149" r="5" fill="#22d3ee"/>
+  <circle cx="308" cy="149" r="2" fill="#0f172a"/>
+
+  <!-- Eye tracking rays -->
+  <line x1="255" y1="148" x2="530" y2="115" stroke="#22d3ee" stroke-width="0.8" opacity="0.3" stroke-dasharray="4 3"/>
+  <line x1="311" y1="148" x2="530" y2="115" stroke="#22d3ee" stroke-width="0.8" opacity="0.3" stroke-dasharray="4 3"/>
+
+  <!-- Nose & Mouth -->
+  <path d="M272 170 Q275 185 278 170" fill="none" stroke="#475569" stroke-width="1"/>
+  <path d="M260 200 Q275 210 290 200" fill="none" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Label: Webcam -->
+  <text x="275" y="280" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Webcam</text>
+  <text x="275" y="298" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Eye Tracking</text>
+  <!-- Camera icon -->
+  <rect x="255" y="305" width="40" height="25" rx="4" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="275" cy="317" r="7" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="275" cy="317" r="3" fill="#64748b"/>
+
+  <!-- ===== MIDDLE: Arrow with processing ===== -->
+  <line x1="365" y1="170" x2="500" y2="170" stroke="#4ade80" stroke-width="2" stroke-dasharray="6 4"/>
+  <polygon points="500,162 515,170 500,178" fill="#4ade80"/>
+
+  <text x="440" y="145" text-anchor="middle" fill="#4ade80" font-family="system-ui, sans-serif" font-size="10" font-weight="600">MediaPipe</text>
+  <text x="440" y="158" text-anchor="middle" fill="#4ade80" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Face Mesh</text>
+  <text x="440" y="195" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">478 landmarks</text>
+  <text x="440" y="208" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">+ head pose</text>
+
+  <!-- ===== RIGHT: tmux window ===== -->
+  <!-- tmux outer frame -->
+  <rect x="530" y="80" width="240" height="200" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Title bar -->
+  <rect x="530" y="80" width="240" height="22" rx="8" fill="#334155"/>
+  <rect x="530" y="94" width="240" height="8" fill="#334155"/>
+  <circle cx="545" cy="91" r="4" fill="#ef4444"/>
+  <circle cx="558" cy="91" r="4" fill="#eab308"/>
+  <circle cx="571" cy="91" r="4" fill="#22c55e"/>
+  <text x="650" y="95" text-anchor="middle" fill="#94a3b8" font-family="monospace" font-size="10">tmux</text>
+
+  <!-- Pane 1 (top-left) — ACTIVE (highlighted) -->
+  <rect x="534" y="106" width="113" height="80" rx="2" fill="#0f172a" stroke="#4ade80" stroke-width="2.5"/>
+  <text x="545" y="122" fill="#4ade80" font-family="monospace" font-size="9">$ vim main.py</text>
+  <text x="545" y="135" fill="#64748b" font-family="monospace" font-size="8">def main():</text>
+  <text x="545" y="146" fill="#64748b" font-family="monospace" font-size="8">  app = init()</text>
+  <text x="545" y="157" fill="#64748b" font-family="monospace" font-size="8">  app.run()</text>
+  <rect x="545" y="160" width="5" height="10" fill="#4ade80" opacity="0.8"/>
+
+  <!-- Pane 2 (top-right) -->
+  <rect x="651" y="106" width="115" height="80" rx="2" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="660" y="122" fill="#a78bfa" font-family="monospace" font-size="9">$ pytest -v</text>
+  <text x="660" y="135" fill="#4ade80" font-family="monospace" font-size="8">PASSED test_1</text>
+  <text x="660" y="146" fill="#4ade80" font-family="monospace" font-size="8">PASSED test_2</text>
+  <text x="660" y="157" fill="#ef4444" font-family="monospace" font-size="8">FAILED test_3</text>
+
+  <!-- Pane 3 (bottom) -->
+  <rect x="534" y="190" width="232" height="86" rx="2" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="545" y="206" fill="#f59e0b" font-family="monospace" font-size="9">$ tail -f app.log</text>
+  <text x="545" y="219" fill="#64748b" font-family="monospace" font-size="8">[INFO] Server started</text>
+  <text x="545" y="230" fill="#64748b" font-family="monospace" font-size="8">[INFO] Connected: 3</text>
+  <text x="545" y="241" fill="#64748b" font-family="monospace" font-size="8">[WARN] Timeout 1.2s</text>
+
+  <!-- Gaze cursor on active pane -->
+  <circle cx="585" cy="140" r="10" fill="#4ade80" opacity="0.15"/>
+  <circle cx="585" cy="140" r="6" fill="#4ade80" opacity="0.4"/>
+  <circle cx="585" cy="140" r="3" fill="#fff" opacity="0.9"/>
+
+  <!-- tmux status bar -->
+  <rect x="530" y="276" width="240" height="4" rx="1" fill="#334155"/>
+
+  <!-- Label: tmux -->
+  <text x="650" y="305" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">tmux Panes</text>
+  <text x="650" y="323" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Auto-focus by gaze</text>
+</svg>
